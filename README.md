@@ -137,7 +137,7 @@ if __name__ == "__main__":
 
     if __name__ == "__main__":
      
-    create_todos_sql = """
+        create_todos_sql = """
     -- todos table
     CREATE TABLE IF NOT EXISTS todos (
     id integer PRIMARY KEY,
@@ -170,8 +170,8 @@ if __name__ == "__main__":
     #conn.commit()
     
     #todos.update(conn, "todos", 2, description="Cola zero, popcorn i chipsy")
+
     
     todos.delete_where(conn, "todos", id=3)
     todos.delete_all(conn, "todos")
-    
     conn.close()
